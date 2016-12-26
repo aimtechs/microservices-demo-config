@@ -1,13 +1,13 @@
 spring:
   profiles:
     active: peer1
----
+server:
+  port: ${PORT:8761}
 spring:
   application:
     name: eureka-service
-  profiles: peer1
-server:
-  port: ${PORT:8761}
+---
+spring.profiles: peer1
 eureka:
  instance:
   hostname: peer1
@@ -22,12 +22,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8762/eureka/
 ---
-spring:
-  application:
-    name: eureka-service
-  profiles: peer2
-server:
-  port: ${PORT:8762}
+spring.profiles: peer2
 eureka:
  instance:
   hostname: peer2
