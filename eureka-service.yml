@@ -3,7 +3,7 @@ server:
 eureka:
   instance:
     hostname: ${PEER:localhost}
-    preferIpAddress: true
+#    preferIpAddress: true
     leaseExpirationDurationInSeconds: 90
     leaseRenewalIntervalInSeconds: 30
     metadataMap:
