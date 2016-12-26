@@ -12,8 +12,8 @@ spring:
 server:
   port: ${PORT:8080}
   contextPath: /
-#message : im changed~~
-message : goodbye 2016 and hello 2017
+message : im changed~~
+#message : goodbye 2016 and hello 2017
 ---
 spring:
   profiles: product
