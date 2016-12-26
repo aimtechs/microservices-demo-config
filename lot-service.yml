@@ -1,6 +1,13 @@
 spring:
   profiles:
     active: development
+
+# define the destination to which the input MessageChannel should be bound
+#spring.cloud.stream.bindings.input.destination = reservations
+
+# ensures 1 node in a group gets message (point-to-point, not a broadcast)
+#spring.cloud.stream.bindings.input.group = reservations-group
+
 ---
 spring:
   profiles: development
@@ -9,9 +16,9 @@ spring:
     username: sa
     password:
     initialize: true
-server:
-  port: ${PORT:8080}
-  contextPath: /
+#server:
+#  port: ${PORT:8080}
+#  contextPath: /
 message : im changed~~
 #message : goodbye 2016 and hello 2017
 ---
@@ -21,7 +28,7 @@ spring:
     url: jdbc:oracle:thin:@ip:port:sid
     username: username
     password: password
-server:
-  port: ${PORT:8080}
-  contextPath: /
+#server:
+#  port: ${PORT:8080}
+#  contextPath: /
 message : hello~
