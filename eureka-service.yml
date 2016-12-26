@@ -27,7 +27,7 @@ spring:
     name: eureka-service
   profiles: peer2
 server:
-  port: ${PORT:8761}
+  port: ${PORT:8762}
 eureka:
  instance:
   hostname: peer2
