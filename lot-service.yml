@@ -1,7 +1,8 @@
 spring:
   profiles:
     active: development
-
+server:
+  port: 0
 # define the destination to which the input MessageChannel should be bound
 #spring.cloud.stream.bindings.input.destination = reservations
 
