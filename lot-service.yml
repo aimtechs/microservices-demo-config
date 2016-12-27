@@ -3,12 +3,6 @@ spring:
     active: development
 server:
   port: 0
-# define the destination to which the input MessageChannel should be bound
-#spring.cloud.stream.bindings.input.destination = reservations
-
-# ensures 1 node in a group gets message (point-to-point, not a broadcast)
-#spring.cloud.stream.bindings.input.group = reservations-group
-
 ---
 spring:
   profiles: development
@@ -20,8 +14,8 @@ spring:
 #server:
 #  port: ${PORT:8080}
 #  contextPath: /
-message : im changed~~
-#message : goodbye 2016 and hello 2017
+#message : im changed~~
+message : goodbye 2016 and hello 2017
 ---
 spring:
   profiles: product
