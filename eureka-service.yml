@@ -1,6 +1,6 @@
-#spring:
-#  profiles:
-#    active: peer1
+spring:
+  profiles:
+    active: peer1
 server:
   port: ${PORT:8761}
 ---
