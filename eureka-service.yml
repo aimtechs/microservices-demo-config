@@ -3,7 +3,7 @@
 #    active: peer1
 server:
   port: ${PORT:8761}
-#---
+---
 spring.profiles: peer1
 eureka:
  instance:
