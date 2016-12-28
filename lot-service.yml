@@ -3,6 +3,8 @@ spring:
     active: development
 server:
   port: 0
+  contextPath: /
+
 ---
 spring:
   profiles: development
@@ -11,6 +13,7 @@ spring:
     username: sa
     password:
     initialize: true
+  h2.console.path: /h2-console
 #server:
 #  port: ${PORT:8080}
 #  contextPath: /
