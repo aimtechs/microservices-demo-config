@@ -16,7 +16,7 @@ spring:
   h2:
     console:
       path: '/h2-console'
-    enabled: true
+      enabled: true
 #server:
 #  port: ${PORT:8080}
 #  contextPath: /
