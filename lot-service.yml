@@ -4,7 +4,6 @@ spring:
 server:
   port: 0
   contextPath: /
-
 ---
 spring:
   profiles: development
@@ -18,9 +17,6 @@ spring:
       path: '/h2-console'
       enabled: true
       settings.web-allow-others: true
-#server:
-#  port: ${PORT:8080}
-#  contextPath: /
 #message : im changed~~
 message : goodbye 2016 and hello 2017
 ---
@@ -30,7 +26,4 @@ spring:
     url: jdbc:oracle:thin:@ip:port:sid
     username: username
     password: password
-#server:
-#  port: ${PORT:8080}
-#  contextPath: /
 message : hello~
